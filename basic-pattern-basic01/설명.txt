@@ -1,1 +1,25 @@
 기본적인 리듀스 사용
+
+및 redux-actions 사용해보기
+
+기본적으로 type만 반환하는 경우에
+
+export const increment = createAction(INCREMENT);
+
+// export function increment(){
+//   return {
+//     type: INCREMENT
+//   }
+// }
+
+와 동일하다 근데 생각해보니.. 이정도면 내가 함수로 만들수도 있었구나.. 내 통찰력이 부족한거엿어
+
+handleActions는 어떻게 사용하는걸까?
+
+export default handleActions({
+  [INCREMENT]: (state, action) => ({
+    num: state.num + 1
+  })
+})
+
+오 이번에 굉장히 깔끔한 패턴을 발견 하였다!

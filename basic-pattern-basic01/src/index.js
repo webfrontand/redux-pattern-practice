@@ -12,11 +12,6 @@ export const store = createStore(reducers);
 console.log(store.getState());
 store.subscribe(() => { console.log(store.getState()) })
 
-store.dispatch(increment());
-store.dispatch(increment());
-
-store.dispatch(clear());
-
 ReactDOM.render(
   <Provider store={store}>
   <App />
