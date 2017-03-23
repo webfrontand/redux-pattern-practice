@@ -1,0 +1,28 @@
+좋은 리덕스 패턴을 찾기 위한 고민을 시작하자..
+
+[ ActionTypes 는 어떻게 분류하면 좋을까? ]
+
+따로 파일을 만든다.
+
+
+export const AUTH = "AUTH"
+
+export default ATUH = {
+	AUTH: 'AUTH'
+} 
+
+아니면 액션 크레에이터 함수에 함께 포함한다.
+
+redux-actions [modules 확인해보기]
+{ createAction, handleActions } from 'redux-actions';
+
+actions 함수
+
+export const checkUsername = (username)
+
+이제 보니깐 페이로드에 반환 객체에 프로미스가 반환되도
+되는구나..
+
+
+아 whotalk 분석해보니, 어차피 객체 나열하는 것은 똑같은데
+함수화를 잘 시켜놓아서 코드가 깔끔해보이는 거구나..
