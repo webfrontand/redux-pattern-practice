@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	background-color: #ddd;
+	width: 100%;
+}
+
+.header ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.header ul li {
+	float: left;
+	cursor: pointer;
+}
+
+.header ul li.active {
+	background-color: #000;
+	color: #fff;
+}
+
+.header ul li a {
+	display: block;
+	padding: 20px;
+}
+
+.header ul li a:hover {
+	background-color: #ccc;
+}
+
+.container {
+	padding: 20px;
+	border: 1px solid #000;
+}
